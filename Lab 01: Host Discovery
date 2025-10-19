@@ -1,0 +1,31 @@
+# Lab 01: Host Discovery
+
+## 🎯 Objective
+Identify live hosts on the local network using passive and active scanning tools.
+
+## 🛠️ Tools Used
+- netdiscover
+- nmap
+- arp-scan
+
+## 🧠 Target Info
+| Detail       | Value              |
+|--------------|--------------------|
+| Subnet       | 192.168.56.0/24    |
+| Interface    | eth0               |
+
+## 🔍 Steps Taken
+1. Ran `netdiscover -r 192.168.56.0/24`
+2. Ran `nmap -sn 192.168.56.0/24`
+3. Ran `arp-scan --interface eth0 --localnet`
+4. Saved output to `netdiscover.txt` and `nmap-sweep.txt`
+
+## ✅ Outcome
+- Found 3 live hosts
+- Confirmed IPs and MAC addresses
+- Screenshot saved in `/screenshots/`
+
+## 🧠 Reflection
+- Passive scans are stealthier but slower
+- ARP scan was fastest and most accurate
+- Next: Port scanning on discovered hosts
