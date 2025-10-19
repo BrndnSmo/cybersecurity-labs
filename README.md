@@ -1,6 +1,6 @@
 # 🛡️ Cybersecurity Labs: Hands-On Offensive Security
 
-Welcome to my cybersecurity lab journal — a curated collection of hands-on exercises in ethical hacking, vulnerability assessment, and post-exploitation. These labs are part of my 10-week journey to become a cybersecurity analyst by January 2026.
+Welcome to my cybersecurity lab journal — a curated collection of hands-on exercises in ethical hacking, vulnerability assessment, and post-exploitation.
 
 ## 🧰 Tools & Platforms
 - Kali Linux, Metasploit Framework
