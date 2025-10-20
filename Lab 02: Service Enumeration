@@ -1,0 +1,34 @@
+# Lab 02: Service Enumeration
+
+## 🎯 Objective
+Identify running services and their versions to assess potential vulnerabilities.
+
+## 🛠️ Tools Used
+- nmap
+- enum4linux
+- nikto
+- whatweb
+- nuclei
+
+## 🧠 Target Info
+| Detail       | Value              |
+|--------------|--------------------|
+| Target IP    | 192.168.56.101     |
+| Open Ports   | 21, 22, 80, 139, 445 |
+
+## 🔍 Steps Taken
+1. Ran `nmap -sV -A 192.168.56.101`
+2. Ran `enum4linux 192.168.56.101` for SMB shares
+3. Ran `nikto -h http://192.168.56.101` for web server scan
+4. Ran `whatweb http://192.168.56.101` for tech fingerprinting
+5. Ran `nuclei -u http://192.168.56.101` for CVE scan
+
+## ✅ Outcome
+- Discovered Apache 2.2.8, Samba 3.0.20, vsftpd 2.3.4
+- Found potential vulnerabilities for exploitation
+- Screenshots saved in `/screenshots/`
+
+## 🧠 Reflection
+- Enumeration is critical before exploitation
+- Learned how to correlate service versions with known CVEs
+- Next: Exploit vsftpd 2.3.4 in Lab 03 
